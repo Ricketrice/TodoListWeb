@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+
+#header {
+    background-color: #f5deb3;
+    height: 100%;
+}
+
+#header h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+#mainBody {
+    background-color: #fdf6e3;
+}
+
+hr {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.justDoit {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 44px
+}
+
+.content {
+    margin-top: 15px;   
+}
+
+.quote {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    background-color: #f6eedf;
+}
+
+#mainBody {
+    display: grid;
+    grid-template-rows: 75px 50px 1fr ;    
+}
+
+.quote {
+    display: grid;
+    grid-row: 1/2;
+}
+.todoH4 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-row: 2/3;
+    margin-left: 10px;
+}
+
+.addProject {
+    margin-top: 10%;
+    text-align: end;
+    margin-right: 10%;
+}
+
+.addProject button {
+    background-color: #c19a6b;
+    color: #fff;
+    border: none;
+    height: 30px;
+    padding: 10px;
+}
+
+.addProject button:hover {
+  background-color: #a57c52; /* slightly darker on hover */
+  cursor: pointer;
+}
+
+.projectFormDiv {
+    display: none;
+    background-color: #fffaf0;    
+    border: 1px solid #e0d8c3;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    height: 120px;
+    position: fixed;
+    top: 30%;
+    left: 45%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.addTask {
+    background-color: #c19a6b;     
+    color: white;              
+    border: none;                
+    padding: 10px 16px;        
+    height: 34px;  
+    font-size: 16px;           
+    border-radius: 6px;         
+    cursor: pointer;             
+    transition: background-color 0.3s ease; 
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.addTask:hover {
+    background-color: #a57c52;  
+}
+
+.addTaskForm {
+    display: none;
+    border-radius: 10px;
+    background-color: #f5f5dc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 325px;
+    padding: 20px;
+    height: 300px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+}
+
+#priority {
+    display: inline-block;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 10px;
+  width: 100%;               /* Full width */
+  box-sizing: border-box;    /* Include padding in total width */
+}
+
+.task-grid > div {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
